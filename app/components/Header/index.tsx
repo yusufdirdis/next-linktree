@@ -48,7 +48,7 @@ export default function Header({ picture, title, subtitle }: { picture: string, 
     <Container>
       <Picture background={picture} />
       <Title>{title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
+      {subtitle && <Subtitle>{subtitle}</Subtitle>}
     </Container>
   );
 }
